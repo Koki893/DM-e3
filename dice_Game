@@ -3,6 +3,14 @@
 #include <time.h>
 int main(){
 
+ voit greet(){
+ char name[55];
+
+  printf("What is your name?\n");
+  scanf("%s",name);
+  printf("> %s\n",name);
+  printf("Hello, %s!\n",name);
+}
   int x1,x2,total;
 
   srand(time(NULL));
@@ -10,6 +18,7 @@ int main(){
   x1 = (rand() % 6 + 1);
   x2 = (rand() % 6 + 1);
   total = x1 + x2;
+  greet();
   printf("Rolling dice...\n");
   printf("Die 1: %d\n",x1);
   printf("Die 2: %d\n",x2);
