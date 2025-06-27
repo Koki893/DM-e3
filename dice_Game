@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-int main(){
 
- voit greet(){
+void greet(){
  char name[55];
 
   printf("What is your name?\n");
@@ -11,6 +10,10 @@ int main(){
   printf("> %s\n",name);
   printf("Hello, %s!\n",name);
 }
+
+
+int main(){
+
   int x1,x2,total;
 
   srand(time(NULL));
